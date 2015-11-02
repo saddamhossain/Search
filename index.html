@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Searching Example with jQuery Bootstrap and bselect js</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet/less" href="bselect.less" />
+</head>
+<body>
+<br/><br/>
+	<div class="container">
+					<h5>This is the list of language </h5>
+					<select class="form-controls">
+						<option value="">Select an option</option>
+						<option value="Ada">Ada</option>
+						<option value="C">C</option>
+						<option value="C#">C#</option>
+						<option value="C++">C++</option>
+						<option value="C++">CoffeeScript</option>
+						<option value="Dart">Dart</option>
+						<option value="Delphi">Delphi</option>
+						<option value="Erlang">Erlang</option>
+						<option value="F#">F#</option>
+						<option value="FORTRAN">FORTRAN</option>
+						<option value="Go">Go</option>
+						<option value="Haskell">Haskell</option>
+						<option value="Java">Java</option>
+						<option value="JavaScript">JavaScript</option>
+						<option value="Kotlin">Kotlin</option>
+						<option value="Lisp">Lisp</option>
+						<option value="Lua">Lua</option>
+						<option value="MATLAB">MATLAB</option>
+						<option value="Objective-C">Objective-C</option>
+						<option value="Pascal">Pascal</option>
+						<option value="Perl">Perl</option>
+						<option value="PHP">PHP</option>
+						<option value="Python">Python</option>
+						<option value="Ruby">Ruby</option>
+						<option value="Scala">Scala</option>
+						<option value="Shell">Shell</option>
+						<option value="Tcl">Tcl</option>
+						<option value="Visual Basic">Visual Basic</option>
+					</select>
+					
+					<br/> <br/> <br/>
+					
+					<h5> Another Example </h5>
+					<select class="span5 bselect-inaccessible" id="bselect-optgroup" data-placeholder="Select a rock band">
+						<option value="">Select a rock band</option>
+						<option value="No">I don't like rock</option>
+						<optgroup label="Hard Rock">
+							<option value="AC/DC">AC/DC</option>
+							<option value="Led Zeppelin">Led Zeppelin</option>
+							<option value="The Who">The Who</option>
+							<option value="Van Halen">Van Halen</option>
+						</optgroup>
+						<optgroup label="Heavy Metal">
+							<option value="Black Sabbath">Black Sabbath</option>
+							<option value="Dio">Dio</option>
+							<option value="Iron Maiden">Iron Maiden</option>
+							<option value="Metallica">Metallica</option>
+							<option value="Motorhead">Motorhead</option>
+						</optgroup>
+						<optgroup label="Punk">
+							<option value="Sex Pistols">Sex Pistols</option>
+							<option value="The Clash">The Clash</option>
+							<option value="The Ramones">The Ramones</option>
+						</optgroup>
+					</select>
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="bselect.js"></script>
+	<script>
+	$("select").bselect();
+	</script>
+	
+</body>
+</html>
